@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:wght@400;600;700&family=Poppins:wght@100;300;400;500&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Mochiy+Pop+One&family=Montserrat:ital,wght@0,300;0,400;1,600&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;500;600&family=Poppins:wght@100;300;400;500&family=Quicksand:wght@400;500;600;700&display=swap');
+
+:root {
+    --white:#fff;
+    --c1: #282828;
+    --c2: #141414;
+    --c3: #6CFF00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #282828;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4%;
+}
+
+.logo {
+    margin-right: auto;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.menu-links {
+    display: flex;
+    margin-right: 20px;
+}
+
+li a {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 4px 18px 6px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+li a:hover {
+    background: #6CFF00;
+}
+
+#toggle {
+    display: none;
+    color: #fff;
+}
+
+section {
+    padding: 0 4%;
+}
+
+.home {
+    margin-top: 130px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+}
+
+.home .home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.home .home-right {
+    height: calc(100vh - 120px - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.home .home-right .image {
+    width: 100%;
+    height: 100%;
+}
+
+.home .home-right .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.home-left h3 {
+    font-size: 2.15rem;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+}
+
+.home-left h1 {
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    font-size: 4.6rem;
+    margin: -25px 0;
+    text-transform: uppercase;
+}
+
+.home-left h2 {
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+    font-size: 2.75rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.home-left h2 span {
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    color: #6CFF00;
+}
+
+.home-left p {
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-bx {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-bx button {
+    font-family: 'poppins', sans-serif;
+    background: #6CFF00;
+    border: 2px solid transparent;
+    padding: 6px 16px;
+    text-transform: uppercase;
+    color: var(--c2);
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-bx button:hover {
+    background: transparent;
+    border: 2px solid #6CFF00;
+    color: #6CFF00;
+}
+
+.social-icons {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+}
+
+.social-icons a {
+    font-size: 30px;
+    transition: 0.3s ease;
+    margin: 0 20px;
+    color: #6CFF00;
+}
+
+.social-icons a:nth-child(1):hover {
+    color: #3b5998;
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #c2419b;
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(3):hover {
+    color: #00acee;
+    transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(4):hover {
+    color: #047df7;
+    transform: translateY(-5px);
+}
+
+@media (max-width:1170px)
+{
+    .home-left h3
+    {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .home-left h1 {
+        font-size: 4.15rem;
+        margin: -20px 0;
+    }
+    .home-left h2 {
+        font-size: 2.3rem;
+        font-weight: 500;
+    }
+    .home-left p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .btn-bx button {
+        font-size: 1rem;
+    }
+}
+@media (max-width:980px)
+{
+    .home-left h3
+    {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .home-left h1 {
+        font-size: 3.95rem;
+        margin: -20px 0;
+    }
+    .home-left h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .home-left p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    .btn-bx button {
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width:890px)
+{
+    .home {
+        grid-template-columns: 1fr;
+        padding: 20px 4%;
+        gap: 20px;
+    }
+    .home .home-left {
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .home .home-right {
+        height: auto;
+        padding: 10px 50px;
+    }
+    .menu-links {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        left: -100%;
+        width: 100%;
+        min-width: 300px;
+        height: calc(100vh - 50px);
+        padding: 100px;
+        background: #6CFF00;
+        transition: 0.5s ease;
+        z-index: 999;
+    }
+    li a {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+    li a:hover {
+        background: var(--c1);
+    }
+    #toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .menu-links.active {
+        left: 0;
+    }
+}
+
+@media (max-width:640px)
+{
+    .home-left h3 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    
+    .home-left h1 {
+        font-size: 2.55rem;
+        margin: -15px 0 -10px;
+    }
+    .home-left h2 {
+        font-size: 1.36rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .home-left p {
+        font-size: 0.9rem;
+    }
+}
